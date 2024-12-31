@@ -1,0 +1,188 @@
+.sobre-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  :root{
+
+    --primary-color:  #A78569;
+  }
+  /* Seção História */
+  .historia-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    margin-bottom: 80px;
+    background-color: var(--primary-color);
+    color: #f8f9fa;
+  }
+  
+  .historia-content {
+    flex: 1;
+  }
+  
+  .historia-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .historia-image {
+    flex: 1;
+  }
+  
+  .historia-image img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Missão e Valores */
+  .missao-valores-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-bottom: 80px;
+  }
+  
+  .missao-valores-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+  
+  .missao-card, .valores-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .missao-card h2, .valores-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .valores-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .valores-card li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .valores-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color:var(--primary-color);
+  }
+  
+  /* Equipe */
+  .equipe-section {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .equipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .equipe-card:hover {
+    transform: translateY(-10px);
+  }
+
+  
+  .equipe-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Tecnologia */
+  .tecnologia-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-bottom: 80px;
+  }
+  
+  .tecnologia-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .tecnologia-items {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  
+  .tecnologia-item {
+    text-align: center;
+  }
+  
+  .tecnologia-item span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+  }
+  
+  .cta-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .cta-section .btn-primary {
+    background-color: white;
+    color: var(--primary-color); 
+  }
+ .cta-section .btn-primary{
+  border-radius: 15px 0px 15px 0px;
+ }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .historia-section,
+    .missao-valores-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .equipe-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .tecnologia-items {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .equipe-grid {
+      grid-template-columns: 1fr;
+    }
+  }

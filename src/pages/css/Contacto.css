@@ -1,0 +1,90 @@
+.contacto-container {
+    max-width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacto-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(167, 133, 105, 0.1);
+  }
+  
+  .contacto-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #A78569;
+  }
+  
+  .contacto-error {
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #FFE5E5;
+    color: #C00000;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .contacto-success {
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #E5F6E5;
+    color: #006600;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contacto-input,
+  .contacto-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #A78569;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .contacto-textarea {
+    resize: vertical;
+  }
+  
+  .contacto-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background-color: #A78569;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .contacto-button.enviando {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .contacto-info {
+    margin-top: 32px;
+    text-align: center;
+  }
+  
+  .contacto-info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #A78569;
+  }
