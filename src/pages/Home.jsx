@@ -3,9 +3,8 @@ import './css/Home.css';
 import odont from '../img/odont.jpg';
 import banner from '../img/banner.jpg';
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom';
-
+import { Fade } from 'react-awesome-reveal';
+ 
 const HomePage = () => {
   return (
 
@@ -56,7 +55,7 @@ const HomePage = () => {
         </div>
       </section>
       </Fade>
-<Zoom>
+<Fade>
       {/* Sobre Nós */}
       <section className="about-section">
         <div className="about-content">
@@ -74,7 +73,7 @@ const HomePage = () => {
           <img src={odont} alt="Equipe OdontoArt" />
         </div>
       </section>
-      </Zoom>
+      </Fade>
 
       {/* Depoimentos */}
       <section className="testimonials-section">
