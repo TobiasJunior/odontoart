@@ -2,14 +2,14 @@ import React from 'react';
 import './Footer.css';
 import odon from '../img/odon.png'
 import { MdOutlineFacebook, MdOutlineWhatsapp } from "react-icons/md";
-import { IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io";
+import {  IoLogoInstagram } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-column">
-            <h3 className="footer-logo"><img src={odon} ></img></h3>
+            <h3 className="footer-logo"><img src={odon} alt="logo da OdontoArt"></img></h3>
             <p className="footer-description">
             Transformando Sorrisos, Restaurando Confiança.
             </p>
@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-column-title">Contato</h4>
             <div className="footer-contact">
-              <p>📍 Maputo, Mocambique</p>
+              <p>📍 Maputo, Moçambique</p>
               <p>✉️ tobias.munguambe6@gmail.com</p>
               <p>📞 (+258) 87 941 8583</p>
             </div>
@@ -38,9 +38,9 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-column-title">Siga-nos</h4>
             <div className="footer-social">
-              <a href="#" className="social-icon"><IoLogoInstagram/></a>
-              <a href="#" className="social-icon"><MdOutlineWhatsapp/></a>
-              <a href="#" className="social-icon"><MdOutlineFacebook/></a>
+              <a href="instagram.com/odontoart" className="social-icon"><IoLogoInstagram/></a>
+              <a href="whatsapp.me/odontoart" className="social-icon"><MdOutlineWhatsapp/></a>
+              <a href="facebook.com/odontoart" className="social-icon"><MdOutlineFacebook/></a>
             </div>
           </div>
         </div>
