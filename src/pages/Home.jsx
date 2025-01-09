@@ -18,7 +18,7 @@ const HomePage = () => {
           <h2>Transformando Sorrisos, Restaurando Confiança</h2>
           <p>Cuidado odontológico de excelência com tecnologia de ponta e tratamento humanizado.</p>
           <div className="hero-buttons">
-            <Link to="/agenda" className="btn btn-primary">Agendar Consulta</Link>
+            <Link to="https://calendly.com/odontoart/consulta-online-gratuita-clone-1?fbclid=PAZXh0bgNhZW0CMTEAAaYCzkccqbN-SDoACIXT5RKPsYk5hJ4TYKBnC9QIS1Ii9BFqBzt_rNKM78k_aem_1irkA4Jr1v8158I9fYNwaw" className="btn btn-primary">Agendar Consulta</Link>
             <Link to="/servicos" className="btn btn-secondary">Nossos Serviços</Link>
           </div>
         </div>
@@ -100,8 +100,9 @@ const HomePage = () => {
           <h2>Agende Sua Consulta</h2>
           <p>Entre em contato e dê o primeiro passo para um sorriso incrível!</p>
           <div className="contact-info">
-            <p>📞 (+258) 87 941 8583</p>
-            <p>✉️ tobias.munguambe6@gmail.com</p>
+          <p>📍 Av. Josina Machel nr1433, Maputo, Mozambique</p>
+          <p>✉️Geral@odontoart.co.mz</p>
+          <p>📞 (+258) 87 681 0087</p>
           </div>
           <Link to="/contacto" className="btn btn-primary">Fale Conosco</Link>
         </div>

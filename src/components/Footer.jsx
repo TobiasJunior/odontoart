@@ -29,9 +29,9 @@ const Footer = () => {
           <div className="footer-column">
             <h4 className="footer-column-title">Contato</h4>
             <div className="footer-contact">
-              <p>📍 Maputo, Moçambique</p>
-              <p>✉️ tobias.munguambe6@gmail.com</p>
-              <p>📞 (+258) 87 941 8583</p>
+              <p>📍 Av. Josina Machel nr1433, Maputo, Mozambique</p>
+              <p>✉️ Geral@odontoart.co.mz</p>
+              <p>📞 (+258) 87 681 0087</p>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 OdontoArt. Todos os direitos reservados.</p>
+          <p>&copy; 2025 OdontoArt. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
