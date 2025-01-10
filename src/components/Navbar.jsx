@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import odon from '../img/odon.png';
 import './Navbar.css';
+const links = "https://calendly.com/odontoart/consulta-online-gratuita-clone-1?fbclid=PAZXh0bgNhZW0CMTEAAaYCzkccqbN-SDoACIXT5RKPsYk5hJ4TYKBnC9QIS1Ii9BFqBzt_rNKM78k_aem_1irkA4Jr1v8158I9fYNwaw";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
             <Link to="/servicos" className="nav-link" onClick={toggleMenu}>Serviços</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contacto" className="nav-link" onClick={toggleMenu}>Contato</Link>
+            <Link to={links} className="nav-link" onClick={toggleMenu}>Contato</Link>
           </li>
         </ul>
       </div>
