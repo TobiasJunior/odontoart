@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Sobre.css';
 import banner from '../img/banner.jpg';
 import odont from '../img/odont.jpg';
+const links = "https://calendly.com/odontoart/consulta-online-gratuita-clone-1?fbclid=PAZXh0bgNhZW0CMTEAAaYCzkccqbN-SDoACIXT5RKPsYk5hJ4TYKBnC9QIS1Ii9BFqBzt_rNKM78k_aem_1irkA4Jr1v8158I9fYNwaw";
 
 const SobrePage = () => {
   return (
@@ -11,7 +12,7 @@ const SobrePage = () => {
         <div className="historia-content">
           <h1>Nossa História</h1>
           <p>
-            A OdontoArt nasceu em 2010 com um propósito simples, porém profundo: transformar vidas através de sorrisos.
+            A OdontoArt nasceu em 2021 com um propósito simples, porém profundo: transformar vidas através de sorrisos.
             Fundada por um grupo de dentistas apaixonados, nossa clínica surgiu da necessidade de oferecer um
             atendimento odontológico que vai além dos procedimentos técnicos.
           </p>
@@ -116,11 +117,13 @@ const SobrePage = () => {
 
       {/* Chamada para Ação */}
       <section className="cta-section">
+    <div className="cta-content">
         <h2>Conheça a OdontoArt Pessoalmente</h2>
         <p>Marque sua consulta e descubra como podemos transformar seu sorriso.</p>
         <br></br>
-        <a href="#agenda" className="btn btn-primary" id="agenda">Agendar Consulta</a>
-      </section>
+        <a href={links} className="btn btn-primary" id="agenda">Agendar Consulta</a>
+    </div>
+    </section>
     </div>
   );
 };

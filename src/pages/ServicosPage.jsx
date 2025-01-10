@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Servicos.css';
 import './css/Home.css';
+const links = "https://calendly.com/odontoart/consulta-online-gratuita-clone-1?fbclid=PAZXh0bgNhZW0CMTEAAaYCzkccqbN-SDoACIXT5RKPsYk5hJ4TYKBnC9QIS1Ii9BFqBzt_rNKM78k_aem_1irkA4Jr1v8158I9fYNwaw";
 
 const ServicosPage = () => {
   return (
@@ -40,10 +41,12 @@ const ServicosPage = () => {
 
       {/* Chamada para Ação */}
       <section className="servicos-cta">
+        <div className="servicos-content">
         <h2>Agende sua Consulta Hoje!</h2>
         <p>Entre em contato e dê o primeiro passo para um sorriso saudável e bonito.</p>
-        <a href="#contato" className="btn btn-primary">Agendar Consulta</a>
-      </section>
+        <a href={links} className="btn btn-primary">Agendar Consulta</a>
+        </div>
+        </section>
     </div>
   );
 };

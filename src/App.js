@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import ScrolltoTop from "./components/ScrolltoTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,8 +12,8 @@ import Contacto from "./pages/Contacto";
 
 function App() {
   return (
+<BrowserRouter future={{ V7_startTransition:true}}>
 
-    <Router>
       <ScrolltoTop/>
     <div className="App">
       <Navbar />
@@ -27,8 +27,8 @@ function App() {
       </Routes>
       <Footer />
     </div>
-  </Router>
-    
+
+</BrowserRouter>
   );
 }
 
